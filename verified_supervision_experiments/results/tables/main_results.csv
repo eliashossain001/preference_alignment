@@ -1,0 +1,16 @@
+corruption,eta,method,preference_acc,mean_margin,unsafe_refusal_rate,benign_refusal_rate,retention,harmful_survival_rate,clean_retention_rate,false_rejection_rate,corruption_detection_f1
+structured_unsafe,0,consensus_k3,0.55,0.0396875,0.408,0.0,0.4134,0.0,0.4134,0.5866,0.0
+structured_unsafe,0,noise_aware,0.55,0.040265625,0.412,0.0,,,,,
+structured_unsafe,0,oracle,0.546,0.040453125,0.404,0.0,1.0,0.0,1.0,0.0,0.0
+structured_unsafe,0,raw,0.548,0.03975,0.428,0.0,1.0,0.0,1.0,0.0,0.0
+structured_unsafe,0,single,0.558,0.04096875,0.416,0.0,0.599,0.0,0.599,0.401,0.0
+structured_unsafe,10,consensus_k3,0.546,0.03934375,0.432,0.0,0.408,0.08333333333333333,0.41491013978256047,0.5850898602174396,0.18708369533738775
+structured_unsafe,10,noise_aware,0.544,0.03909375,0.416,0.0,,,,,
+structured_unsafe,10,oracle,0.548,0.0405,0.412,0.0,0.9014,0.0,1.0,0.0,1.0
+structured_unsafe,10,raw,0.552,0.04053125,0.404,0.0,1.0,0.0986,1.0,0.0,0.0
+structured_unsafe,10,single,0.548,0.04028125,0.424,0.0,0.5944,0.0908479138627187,0.5995118704237852,0.40048812957621477,0.17691392304641015
+structured_unsafe,20,consensus_k3,0.552,0.03990625,0.42,0.0,0.402,0.1808457711442786,0.4132262517254361,0.586773748274564,0.325552365497441
+structured_unsafe,20,noise_aware,0.554,0.040109375,0.416,0.0,,,,,
+structured_unsafe,20,oracle,0.55,0.0408125,0.424,0.0,0.7969,0.0,1.0,0.0,1.0
+structured_unsafe,20,raw,0.548,0.040546875,0.404,0.0,1.0,0.2031,1.0,0.0,0.0
+structured_unsafe,20,single,0.544,0.040703125,0.412,0.0,0.5905,0.1913632514817951,0.5991968879407705,0.4008031120592295,0.2941560561540973

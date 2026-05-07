@@ -1,0 +1,94 @@
+# =====================================================================
+# Python
+# =====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+build/
+dist/
+.eggs/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# =====================================================================
+# Environment / secrets — DO NOT COMMIT
+# =====================================================================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# =====================================================================
+# OS
+# =====================================================================
+.DS_Store
+Thumbs.db
+
+# =====================================================================
+# Editor / tooling
+# =====================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.claude/
+
+# Local backup of previous git history
+.git.bak*/
+
+# =====================================================================
+# Datasets — too large for git; users regenerate from sources
+# =====================================================================
+data/
+prepared_datasets/
+verified_supervision_experiments/data/processed/
+verified_supervision_experiments/data/corrupted/
+verified_supervision_experiments/data/filtered/
+verified_supervision_experiments/data/raw/
+
+# =====================================================================
+# Heavy experiment outputs (model checkpoints, verifier dumps)
+# =====================================================================
+checkpoints/
+logs/
+verified_supervision_experiments/results/checkpoints/
+verified_supervision_experiments/results/verifier_outputs/
+verified_supervision_experiments/results/eval/
+verified_supervision_experiments/logs/
+
+# but DO commit small artifacts:
+!verified_supervision_experiments/results/tables/main_results.csv
+!verified_supervision_experiments/results/tables/rejection_breakdown.csv
+!verified_supervision_experiments/results/tables/verifier_correlation.csv
+!verified_supervision_experiments/results/tables/*.tex
+!verified_supervision_experiments/results/tables/*_summary.json
+!verified_supervision_experiments/results/figures/*.pdf
+!verified_supervision_experiments/results/figures/*.png
+
+# =====================================================================
+# Model weights / large binaries
+# =====================================================================
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# =====================================================================
+# wandb / mlflow / hydra
+# =====================================================================
+wandb/
+mlruns/
+outputs/
+
+# =====================================================================
+# Misc large files
+# =====================================================================
+*.log
+*.pdf
+!verified_supervision_experiments/results/figures/*.pdf

@@ -1,0 +1,11 @@
+# Verifier pool. All four roles share one LocalLLMBackend instance (singleton-cached
+# per process), differing only in role-specific system prompts. See src/verifiers.py.
+model_name: Qwen/Qwen2.5-1.5B-Instruct
+threshold: 0.7
+roles: [safety, helpfulness, factuality, policy]
+
+# Consensus admission rule
+consensus:
+  k: 3
+  n: 4
+  single_verifier_baseline: safety   # the SingleVerifier filter uses safety only

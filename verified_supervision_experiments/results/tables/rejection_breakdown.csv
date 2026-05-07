@@ -1,0 +1,12 @@
+tag,class,count,fraction
+structured_unsafe_eta0_consensus_k3,clean_low_support,1150,0.1960
+structured_unsafe_eta0_consensus_k3,clean_unanimous_reject,3810,0.6495
+structured_unsafe_eta0_consensus_k3,clean_with_minority_support,906,0.1544
+structured_unsafe_eta10_consensus_k3,clean_low_support,1026,0.1733
+structured_unsafe_eta10_consensus_k3,clean_unanimous_reject,3436,0.5804
+structured_unsafe_eta10_consensus_k3,clean_with_minority_support,812,0.1372
+structured_unsafe_eta10_consensus_k3,truly_corrupted,646,0.1091
+structured_unsafe_eta20_consensus_k3,clean_low_support,917,0.1533
+structured_unsafe_eta20_consensus_k3,clean_unanimous_reject,3042,0.5087
+structured_unsafe_eta20_consensus_k3,clean_with_minority_support,717,0.1199
+structured_unsafe_eta20_consensus_k3,truly_corrupted,1304,0.2181

@@ -1,0 +1,16 @@
+# Corruption sweep for the pilot. eta values are nominal; effective eta is
+# logged in each run's *.summary.json (see data/corrupted/).
+seed: 42
+etas: [0.0, 0.10, 0.20]
+
+regimes:
+  - name: structured_unsafe   # priority — directional contamination on HH
+    description: >
+      flip user_choice from chosen->rejected at rate eta. On HH, rejected = unsafe,
+      so this systematically biases the gradient toward unsafe completions.
+  # the two below run in Phase 4 only, kept here for completeness:
+  - name: random_flip
+    description: i.i.d. label flip at rate eta. Symmetric stochastic noise.
+  - name: coordinated_poisoning
+    description: >
+      structured_unsafe restricted to harm-trigger prompts. Eta is the within-trigger rate.

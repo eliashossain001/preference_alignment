@@ -1,0 +1,14 @@
+{
+  "tag": "structured_unsafe_eta20",
+  "n_rows": 10000,
+  "n_clean": 7969,
+  "n_corrupt": 2031,
+  "verifiers": [
+    "factuality",
+    "helpfulness",
+    "policy",
+    "safety"
+  ],
+  "mean_offdiag_phi": 0.6885820119421978,
+  "rho_proxy": 3.0657460358265936
+}
